@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+}
+/* fondo en toda la pantalla */
+.fondo-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/tierra/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1; /* queda atrás */
+    background-color: black;
+}
+.container {
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 1vh;
+}
+/* contenido normal sin blur */
+.contenido {
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 10;
+    backdrop-filter: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+h1 {
+    margin-top: 30vh;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+}
+p {
+    font-size: 3.7rem;
+}
+button {
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+button:hover {
+    background-color: #cccccc;
+    transform: scale(1.1);  
+}
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: -25vh;
+}
